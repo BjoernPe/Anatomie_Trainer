@@ -1,0 +1,22 @@
+{
+    "bilder": [
+      {
+        "name": "Skelett vorne",
+        "kategorie": "Skelett",
+        "imgSrc": "./img/skelett_vorne_u.png",
+        "points": [ ]
+      },
+      {
+        "name": "Skelett hinten",
+        "kategorie": "Skelett",
+        "imgSrc": "./img/skelett_hinten_u.png",
+        "points": [ ]
+      },
+      {
+        "name": "Darm ",
+        "kategorie": "Organ",
+        "imgSrc": "./img/darm.png",
+        "points": [ ]
+      }
+    ]
+  }

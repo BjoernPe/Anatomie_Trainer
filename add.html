@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interaktives Quiz</title>
+
+    <!-- Bootstrap CSS-Datei -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body class="d-flex flex-column vh-100">
+    <!--Navigationsleiste-->
+    <div id="navbar-container"></div>
+
+    <div
+      class="container mt-5 pt-5 d-flex align-items-center justify-content-center"
+    >
+      <div class="text-center position-relative">
+        <h3 class="mb-4" id="quiz-header">Hinzufügen</h3>
+        <!-- Dropdown-Menü für die Bildauswahl -->
+        <div class="mb-3">
+          <label for="image-selector" class="form-label">Bild auswählen:</label>
+          <select class="form-select" id="image-selector"></select>
+        </div>
+
+        <div class="card mb-4" style="width: 18rem">
+          <h5  class="card-title mb-4" id style="color: red">Der erste Punkt ist die Lösung</h5>
+
+          <div
+            id="image-container"
+            class="mb-3 fixed-size-container position-relative"
+          >
+            <img id="quiz-image" class="img-thumbnail mb-3" alt="Quiz-Bild" />
+            <div id="quiz-points-container"></div>
+            <!-- Container für die Quiz-Punkte -->
+          </div>
+          <div class="card-body">
+            <input
+              type="text"
+              class="form-control"
+              id="questionInput"
+              placeholder="Frage eingeben..."
+            />
+            <!-- Button zum Löschen der Punkte -->
+            <button class="btn btn-danger mt-3" id="delete-points-btn">
+              Löschen
+            </button>
+
+            <!-- Speichern-Button -->
+            <button class="btn btn-success mt-3" id="save-btn">
+              Speichern
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript und Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="./scripts/add.js"></script>
+    <script src="./scripts/loader.js"></script>
+
+    <!-- Container für Bootstrap Alerts -->
+    <div
+      id="alert-container"
+      class="position-fixed top-50 start-50 translate-middle"
+    ></div>
+    <!-- Hier wird der Footer geladen -->
+    <div id="footer-container" class="footer-container mt-auto"></div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+.quiz-point {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Kleinerer Text für die Alerts */
+.alert-sm {
+  font-size: 80%;
+}
+
+/* Zentrierter Alert-Container */
+#alert-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* image Container */
+/* Stil für den image-container mit fester Größe */
+.fixed-size-container {
+  overflow: hidden; /* Falls das Bild die festgelegte Größe überschreitet, wird es beschnitten */
+}
+
+/* Benutzerdefinierte Stile für das Off-Canvas-Menü */
+.offcanvas-header {
+  background-color: #343a40; /* Hintergrundfarbe für den Header */
+  color: #fff; /* Schriftfarbe für den Header */
+  border-bottom: 0.5px solid #dee2e6; /* Unterer Rand für den Header */
+}
+.offcanvas-body {
+  background-color: #343a40; /* Hintergrundfarbe für den Body */
+}
+
+
